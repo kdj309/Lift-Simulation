@@ -1,0 +1,87 @@
+:root{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    --main-bg-color: rgb(0, 105, 255);
+}
+
+body{
+    height: 100%;
+    max-width: 100%;
+    background-color: rgb(253 251 251);
+}
+.btn{
+    padding: 0.5em 0.7em;
+    border-radius: 8px;
+    background-color: var(--main-bg-color);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    border: unset;
+}
+.liftform{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+    padding: 1.5em;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    border-radius: 8px;
+    background-color: white;
+}
+.liftform__item >input{
+    padding: 0.5em 0.7em;
+    outline: none;
+    border-radius: 8px;
+    height: 20px;
+    border-width: 2px;
+    width: 200px;
+}
+
+#liftform__btn:hover{
+    background-color: rgb(12, 87, 193);
+}
+.floorcontainer{
+    width: 80%;
+    margin: auto;
+    margin-top: 1.5rem;
+    border:1.5px var(--main-bg-color) ;
+    max-height: 100%;
+    background-color: white;
+    height: max-content;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.floorcontainer__floor{
+    display: flex;
+    height: 135px;
+    border-bottom: 2px solid;
+    justify-content: space-between;
+    background-color: white;
+}
+.floorcontainer__floorbtns{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    position: relative;
+    bottom: 5px;
+    justify-content: space-evenly;
+}
+.liftcontainer__item{
+    height: 90%;
+    width: 100px;
+    background-color: var(--main-bg-color);
+    position: relative;
+    will-change: transform;
+}
+.floorcontainer__liftcontainer{
+    display: flex;
+    gap: 20px;
+}
+.floorcontainer__floorno{
+    align-self: flex-end;
+}
