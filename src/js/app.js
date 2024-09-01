@@ -67,7 +67,12 @@ function moveUp(position) {
             break;
         }
     }
-    requestAnimationFrame(animatemoveup)
+    if (lowerlift) {
+        requestAnimationFrame(animatemoveup)
+    }else{
+        alert("choose valid floor")
+    }
+    
 }
 function moveDown(position) {
     upperliftposition = position + 1;
@@ -82,7 +87,12 @@ function moveDown(position) {
             break;
         }
     }
-    requestAnimationFrame(animatedown)
+    if (upperlift) {
+        requestAnimationFrame(animatedown)
+    }else{
+    alert("choose valid floor")
+    }
+    
 }
 function animatemoveup(timestamp) {
     if (!start) start = timestamp;
