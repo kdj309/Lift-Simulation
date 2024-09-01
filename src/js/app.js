@@ -152,13 +152,11 @@ function liftopen(timestamp) {
         rightdoornode.style.transform = `translateX(${newPosition}px)`;
         liftopenstopId = requestAnimationFrame(liftopen)
     } else {
-        console.log(leftdoornode.style.transform, rightdoornode.style.transform);
         cancelAnimationFrame(liftopenstopId);
         liftopenstart = null;
         liftopenprogress = 0;
         setTimeout(() => {
             const [leftdoor, rightdoor] = lowerlift.children;
-            console.log(leftdoor.style.transform,rightdoor.style.transform)
             leftdoornode = leftdoor;
             rightdoornode = rightdoor;
             requestAnimationFrame(liftclose)
