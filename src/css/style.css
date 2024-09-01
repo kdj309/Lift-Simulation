@@ -74,9 +74,11 @@ body{
 .liftcontainer__item{
     height: 90%;
     width: 100px;
-    background-color: var(--main-bg-color);
+    background-color: black;
     position: relative;
     will-change: transform;
+    display: flex;
+    align-items: center;
 }
 .floorcontainer__liftcontainer{
     display: flex;
@@ -84,4 +86,26 @@ body{
 }
 .floorcontainer__floorno{
     align-self: flex-end;
+}
+.liftcontainer__item--left-door{
+    border-right: 1px solid white;
+    flex: 0.5;
+    will-change: transform;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+
+}
+.liftcontainer__item--right-door{
+    border-left: 1px solid white;
+    flex: 0.5;
+    will-change: transform;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+}
+@media (max-width:426px) {
+    .floorcontainer{
+        width: 100%;
+    }
 }
